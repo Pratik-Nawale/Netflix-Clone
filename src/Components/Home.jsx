@@ -76,7 +76,6 @@ const Home = () => {
         data: { genres },
       } = await axios.get(`${url}/genre/movie/list?api_key=${apiKey}`);
       setGenre(genres);
-      console.log(genres);
     };
     
 
