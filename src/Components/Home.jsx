@@ -103,9 +103,9 @@ const Home = () => {
       </div>
 
       <Row title={"Upcomming Movies"} arr={upcomingMovies} />
-      <Row title={"Upcomming Movies"} arr={nowPlayingMovies} />
-      <Row title={"Upcomming Movies"} arr={popularMovies} />
-      <Row title={"Upcomming Movies"} arr={topRatedMovies} />
+      <Row title={"Now Playing"} arr={nowPlayingMovies} />
+      <Row title={"Popular"} arr={popularMovies} />
+      <Row title={"Top Rated"} arr={topRatedMovies} />
 
       <div className="genreBox">
         {genre.map((item) => (
