@@ -1,3 +1,7 @@
+## Live on : https://netflix-clone-two-green.vercel.app/
+
+#### Note: It is not a mobile friendly website, open it in desktop mode
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
