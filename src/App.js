@@ -1,7 +1,7 @@
-import './App.scss';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Components/Home';
-import Header from './Components/Header/Header';
+import "./App.scss";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
@@ -9,9 +9,8 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
-
     </Router>
   );
 }

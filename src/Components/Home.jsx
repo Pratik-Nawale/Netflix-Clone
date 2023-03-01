@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import {BiPlay} from "react-icons/bi"
-import {AiOutlinePlus} from "react-icons/ai"
-// import { DotenvConfigOptions } from "dotenv";
+import { BiPlay } from "react-icons/bi";
+import { AiOutlinePlus } from "react-icons/ai";
 
 const apiKey = "c39ba4567d3512cd18be45573b2c60c8";
 const url = "https://api.themoviedb.org/3";
@@ -16,14 +15,7 @@ const topRated = "top_rated";
 
 const Card = ({ img }) => <img className="card" src={img} alt="cover" />;
 
-const Row = ({
-  title,
-  arr = [
-    // {
-    //   img: "https://www.themoviedb.org/t/p/w220_and_h330_face/7WUHnWGx5OO145IRxPDUkQSh4C7.jpg",
-    // },
-  ],
-}) => (
+const Row = ({ title, arr = [] }) => (
   <div className="row">
     <h2>{title}</h2>
 
@@ -77,7 +69,6 @@ const Home = () => {
       } = await axios.get(`${url}/genre/movie/list?api_key=${apiKey}`);
       setGenre(genres);
     };
-    
 
     getAllGenre();
     fetchUpcoming();
@@ -101,11 +92,14 @@ const Home = () => {
         {popularMovies[0] && <p>{popularMovies[0].overview}</p>}
 
         <div>
-          <button><BiPlay/> Play</button>
-          <button>My List<AiOutlinePlus/></button>
+          <button>
+            <BiPlay /> Play
+          </button>
+          <button>
+            My List
+            <AiOutlinePlus />
+          </button>
         </div>
-
-
       </div>
 
       <Row title={"Upcomming Movies"} arr={upcomingMovies} />
