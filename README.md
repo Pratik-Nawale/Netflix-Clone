@@ -1,4 +1,4 @@
-## Live on : https://netflix-clone-two-green.vercel.app/
+## Live on : https://flixnet-theta.vercel.app/
 
 #### Note: It is not a mobile friendly website, open it in desktop mode
 
